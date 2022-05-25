@@ -13,7 +13,7 @@ class Solution:
                 return
             p.append(N.val)
 
-            if N.left is None and N.right is None and sum(p) == targetSum:
+            if N.left is None and N.right is None:
                 options.append(list(p))
             else:
                 dfs(N.left), dfs(N.right)
